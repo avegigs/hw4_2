@@ -82,7 +82,7 @@ class SocketClient:
 
 
 def run_http_server(server_class=HTTPServer, handler_class=HttpHandler):
-    server_address = ('', 3000)
+    server_address = ('', 8000)
     http_server = server_class(server_address, handler_class)
     http_server.serve_forever()
 
